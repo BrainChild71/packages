@@ -65,7 +65,6 @@ CONFIGURE_ARGS += \
 	--disable-backend-prometheus-remote-write \
 	--disable-unit-tests \
 	--disable-ml \
-	--disable-cloud
 
 define Build/Configure
 	$(SED) 's/m4_esyscmd(\[git describe .*\])/$(PKG_VERSION)/' $(PKG_BUILD_DIR)/configure.ac
